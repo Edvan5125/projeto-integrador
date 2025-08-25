@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { App } from '../app';
+import { Somacomp } from './somacomp/somacomp';
 
 const routes: Routes = [
-  {path: 'soma', component: App}
+  {path: '', component: Somacomp}
 ];
 
 @NgModule({
