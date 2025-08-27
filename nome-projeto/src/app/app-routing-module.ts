@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: 'soma',
     loadChildren: () => import('./soma/soma-module').then(m => m.SomaModule)
+  },
+  {
+    path: 'livros',
+    loadChildren: () => import('./livros/livros-module').then(m => m.LivrosModule)
   }
 ];
 

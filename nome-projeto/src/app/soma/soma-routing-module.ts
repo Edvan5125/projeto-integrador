@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Somacomp } from './somacomp/somacomp';
+import { Somacomp } from './soma-comp/somacomp';
 
 const routes: Routes = [
   {path: '', component: Somacomp}
