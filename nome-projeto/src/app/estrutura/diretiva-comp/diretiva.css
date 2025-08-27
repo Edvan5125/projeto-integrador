@@ -1,0 +1,8 @@
+.curso-ativo {
+  color: blue;
+  font-weight: bold;
+}
+
+.curso-inativo {
+  color: red;
+}

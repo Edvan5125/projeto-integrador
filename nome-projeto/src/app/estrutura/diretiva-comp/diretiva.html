@@ -1,0 +1,25 @@
+<p>diretiva</p>
+<ul>
+  <li *ngFor="let curso of cursos">
+    <span 
+      [ngClass]="{
+        'curso-ativo': curso.ativo,
+        'curso-inativo': !curso.ativo
+      }">
+      {{ curso.nome }}
+    </span>
+    <button (click)="curso.ativo = !curso.ativo">
+      {{curso.ativo ? 'Desativar' : 'Ativar'}}
+    </button>
+  </li>
+<div>
+  <ul>
+    <li *ngFor="let curso of cursos"
+        [ngStyle]="{'font-size.px': fonte}"
+        [ngClass]="{'curso-ativo': curso.ativo, 'curso-inativo': !curso.ativo}">
+      {{curso.nome}}
+    </li>
+  </ul>
+  <button (click)="aumentarFonte()">+</button>
+  <button (click)="diminuirFonte()">-</button>
+</div>
