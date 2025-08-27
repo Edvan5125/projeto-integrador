@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-livros-comp',
   standalone: false,
   templateUrl: './livros-comp.html',
-  styleUrl: './livros-comp.css'
+  styleUrls: ['./livros-comp.css']
 })
-export class LivrosComp {
-
+export class LivrosComp { 
 }
+

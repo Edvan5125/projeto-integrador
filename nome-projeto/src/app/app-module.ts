@@ -7,8 +7,7 @@ import { LivrosComp } from './livros/livros-comp/livros-comp';
 
 @NgModule({
   declarations: [
-    App,
-    LivrosComp
+    App
   ],
   imports: [
     BrowserModule,
