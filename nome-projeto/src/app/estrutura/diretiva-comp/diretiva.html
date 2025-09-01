@@ -1,6 +1,9 @@
 <p>diretiva</p>
 <ul>
+  <!-- cria uma lista não ordenada para cada item do array cursos, cria um <li>. O *ngFor é uma diretiva Angular para repetição -->
   <li *ngFor="let curso of cursos">
+    <!-- o <span> exibe o nome do curso O [ngClass] aplica a classe CSS curso-ativo se curso.ativo for verdadeiro, 
+      ou curso-inativo se for falso. -->
     <span 
       [ngClass]="{
         'curso-ativo': curso.ativo,
@@ -11,6 +14,8 @@
     <button (click)="curso.ativo = !curso.ativo">
       {{curso.ativo ? 'Desativar' : 'Ativar'}}
     </button>
+    <!--um botão que, ao ser clicado, alterna o valor de curso.ativo (ativa/desativa o curso)
+    o texto do botão muda dinamicamente para "Desativar" se o curso estiver ativo, ou "Ativar" se estiver inativo. -->
   </li>
 <div>
   <ul>
@@ -20,6 +25,9 @@
       {{curso.nome}}
     </li>
   </ul>
+  <!-- repetindo os cursos, [ngStyle] define o tamanho da fonte do item conforme o valor da variável fonte, 
+    o [ngClass] funciona igual ao anterior, alternando as classes CSS conforme o estado do curso -->
   <button (click)="aumentarFonte()">+</button>
   <button (click)="diminuirFonte()">-</button>
 </div>
+<!--dois botões: um chama a função aumentarFonte() para aumentar o tamanho da fonte, e o outro chama diminuirFonte() para diminuir-->
