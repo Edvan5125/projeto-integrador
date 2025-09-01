@@ -6,7 +6,7 @@
         'curso-ativo': curso.ativo,
         'curso-inativo': !curso.ativo
       }">
-      {{ curso.nome }}
+      {{curso.nome}}
     </span>
     <button (click)="curso.ativo = !curso.ativo">
       {{curso.ativo ? 'Desativar' : 'Ativar'}}

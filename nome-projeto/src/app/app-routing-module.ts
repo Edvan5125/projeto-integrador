@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'diretiva',
     loadChildren: () => import('./estrutura/estrutura-module').then(m => m.EstruturaModule)
+  },
+  {
+    path: 'estoque',
+    loadChildren: () => import('./produto/produto-module').then(m => m.ProdutoModule)
   }
 ];
 
