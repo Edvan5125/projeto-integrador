@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ProdutoRoutingModule } from './produto-routing-module';
-import { App } from '../app';
-import { Estoque } from './estoque/estoque';
+import { Estoque } from './estoque-comp/estoque';
 
 
 @NgModule({

@@ -4,7 +4,7 @@
 <button (click)="aumentarPrecos()">Aumentar preços em 10%</button>
 <button (click)="diminuirPrecos()">Diminuir preços em 10%</button>
 
-<table border="1" cellpadding="8" style="margin-top: 16px; width: 100%;">
+<table border="1" style="margin-top: 16px; width: 100%;">
 	<thead>
 		<tr>
 			<th>Produto</th>
@@ -15,7 +15,7 @@
 	</thead>
 	<tbody>
 		<tr *ngFor="let produto of produtos">
-			<td>{{ produto.nome }}</td>
+			<td>{{produto.nome}}</td>
 			<td [ngStyle]="{ color: produto.preco > 2000 ? 'blue' : 'black' }">
 				R$ {{produto.preco | number:'1.2-2'}}
 			</td>
