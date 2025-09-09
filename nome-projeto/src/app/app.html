@@ -6,7 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <p style="background-color: aqua; font-size: 40px;">Pagina principal</p>
+    <!--- router.url é a URL atual do aplicativo Angular, vem do Router do Angular --->
+    <p *ngIf="router.url === '/' || router.url === ''" style="background-color: aqua; font-size: 40px;">Pagina principal</p>
+    <p *ngIf="router.url.startsWith('/livros')" style="background-color: rgb(0, 102, 255); font-size: 40px;">Pagina Livros</p>
+    <p *ngIf="router.url.startsWith('/soma')" style="background-color: rgb(162, 0, 255); font-size: 40px;">Pagina Soma</p>
+    <p *ngIf="router.url.startsWith('/estoque')" style="background-color: rgb(255, 0, 255); font-size: 40px;">Pagina Produto</p>
+    <p *ngIf="router.url.startsWith('/diretiva')" style="background-color: rgb(255, 0, 55); font-size: 40px;">Pagina Diretiva</p>
     <button routerLink="/estoque">estoque</button>
     <button routerLink="/livros">livros</button>
     <button routerLink="/diretiva">diretiva</button>
